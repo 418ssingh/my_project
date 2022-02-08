@@ -17,8 +17,8 @@ import matplotlib.pyplot as plt
 
 os.getcwd()    
     
-api_key = "k87m1ti1drm14ya9"
-api_secret = "fd7ge8a2sd13j3sbsq921ttqyyugt9ti"
+api_key = "*****************"
+api_secret = "*******************"
 kite = KiteConnect(api_key=api_key)
 print(kite.login_url())
 
