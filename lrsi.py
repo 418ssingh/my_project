@@ -18,8 +18,8 @@ cwd = os.chdir("C:\\Users\\Admin\\Desktop\\kite\\my working")
 
 os.getcwd() 
 
-api_key = "k87m1ti1drm14ya9"
-api_secret = "fd7ge8a2sd13j3sbsq921ttqyyugt9ti"
+api_key = "**************"
+api_secret = "*******************"
 kite = KiteConnect(api_key=api_key)
 print(kite.login_url()) 
 request_token = "SWdk1bWo3HfqoymBOb0eta2OZoKpYSqJ" #Extract request token from the redirect url obtained after you authorize yourself by loggin in
