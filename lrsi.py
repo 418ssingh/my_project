@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Sep  9 11:42:11 2021
-
 @author: Admin
 """
 from kiteconnect import KiteConnect
@@ -387,3 +385,4 @@ print("BNH_returns_mean",auto_15["BNH_returns"].mean())
 #sma,emal,emas,lrsiup,lrsidown,sl%,tp%,commission%
 #parameters=[200,50,20,[0.20,0.4],[0.6,0.80],3,6,0.01]
 #df=backtest(df,parameters)
+
