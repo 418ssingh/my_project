@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Sep  7 10:58:12 2021
-
 @author: Admin
 """
 
@@ -303,3 +301,4 @@ print("Strat max-drawdown:",max_dd(data,"strategy_returns")*100)
 
     
     
+
