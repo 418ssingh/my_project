@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Sep  8 11:28:04 2021
-
 @author: Admin
 """
 
@@ -309,3 +307,4 @@ print("Strat returns:",data["c_s_ret"][-1]*100)
 print("BNH returns:",data["bnh"][-1]*100)
 print("BNH Drawdowns:",max_dd_bnh(data, "pct_change")*100)
 print("Strat max-drawdown:",max_dd(data,"strategy_returns")*100)
+
