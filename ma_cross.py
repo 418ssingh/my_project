@@ -1,7 +1,5 @@
 Zz# -*- coding: utf-8 -*-
 """
-Created on Wed Sep 22 11:48:09 2021
-
 @author: Admin
 """
 
@@ -190,5 +188,6 @@ z2 =  get_data_KPI(tickers_pharma)
 df5 = fetchOHLCExtended("ALKEM","22-09-2015","60minute")         
 #KPIs(m,n,df5,daily_dp)
 KPIs(9, 16, df5,7) 
+
 
 
