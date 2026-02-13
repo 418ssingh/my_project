@@ -9,10 +9,15 @@ from selenium import webdriver
 import time
 import os
 import pandas as pd
-import datetime as dt
 import numpy as np
 import matplotlib.pyplot as plt 
-
+import statistics
+from datetime import datetime
+import talib as ta
+import yfinance as yf
+import datetime
+import warnings
+warnings.filterwarnings('ignore')
 
 api_key = "k87m1ti1drm14ya9"
 api_secret = "fd7ge8a2sd13j3sbsq921ttqyyugt9ti"
@@ -39,19 +44,7 @@ def instrumentLookup(instrument_df,symbol):
         return instrument_df[instrument_df.tradingsymbol==symbol].instrument_token.values[0]
     except:
         return -1
-
-
-
-import numpy as np
-import pandas as pd  
-import statistics
-from datetime import datetime
-import talib as ta
-import matplotlib.pyplot as plt
-import yfinance as yf
-import datetime
-import warnings
-warnings.filterwarnings('ignore')
+        
 
 def calc_rsi(df,rsi):
     difference=df["close"].diff()
@@ -307,4 +300,5 @@ print("Strat returns:",data["c_s_ret"][-1]*100)
 print("BNH returns:",data["bnh"][-1]*100)
 print("BNH Drawdowns:",max_dd_bnh(data, "pct_change")*100)
 print("Strat max-drawdown:",max_dd(data,"strategy_returns")*100)
+
 
