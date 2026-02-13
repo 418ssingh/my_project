@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Aug 10 15:37:42 2021
-
 @author: Admin
 """
 #from selenium import webdriver
@@ -133,4 +131,5 @@ def max_dd(DF):
     df["drawdown_pct"] = df["drawdown"]/df["cum_roll_max"]
     max_dd = df["drawdown_pct"].max()
     return max_dd
+
 print("max_dd", max_dd(df))
