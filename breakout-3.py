@@ -26,7 +26,7 @@ print(kite.login_url())
 #request_token = "JMMfGO9RlmUW1PJCYrzmVtskauQSa5d4" #Extract request token from the redirect url obtained after you authorize yourself by loggin in
 #Data = kite.generate_session(request_token, api_secret=api_secret) 
 
-#create kite trading object
+#create the kite trading object
 #set access token 
 kite.set_access_token("2knJldNpg2JXmvqQxEWwcVmWfZjxUTKa")
 
@@ -215,3 +215,4 @@ print("Nifty Drawdown",max_dd(strategy_df,"nifty_ret")*100)
 strategy_df[["strategy_return","nifty_return"]].plot() 
 
  
+
